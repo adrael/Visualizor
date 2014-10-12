@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Visualizor - HTML5 Web Audio API</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<div id="title">
+    <h1>Visualizor &mdash; HTML5 Web Audio API</h1>
+</div>
+
+<button role="button" id="file">Open a file</button>
+
+<div id="visualisation_up"></div>
+<div id="visualisation_down"></div>
+
+<audio id="player" controls="controls" preload="auto"
+       src="assets/wagner.mp3"></audio>
+
+<script src="libs/jquery.min.js"></script>
+<script src="js/visualizor.js"></script>
+
+<script>
+
+    window.onload = Visualizor.initialize();
+
+</script>
+
+</body>
+</html>
